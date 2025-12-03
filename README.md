@@ -20,6 +20,15 @@ If bundler is not being used to manage dependencies, install the gem by executin
 gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
 ```
 
+Also install the spacy python package:
+
+```bash
+python --version
+Python 3.10.19      # must be 3.10
+pip install spacy
+python -m spacy download de_core_news_sm
+```
+
 ## Usage
 
 TODO: Write usage instructions here
