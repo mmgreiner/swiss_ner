@@ -1,26 +1,23 @@
 # SwissNer
 
-TODO: Delete this and the text below, and describe your gem
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/swiss_ner`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem uses [SpaCy][spacy] to detect named entities in the given input. The standard [spacy] model was extended by
+Swiss phone numbers and Swiss social security numbers.
 
 ## Installation
-
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
 
 Install the gem and add to the application's Gemfile by executing:
 
 ```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+bundle add swiss_ner --github mmgreiner/swiss_ner
 ```
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
 ```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+gem install swiss_ner --github mmgreiner/swiss_ner
 ```
 
-Also install the spacy python package:
+The installer should do this already, but sometimes you may have to manually install the spacy python package. Note that python must be `3.10` for [spacy] to work correctly.
 
 ```bash
 python --version
@@ -28,6 +25,8 @@ Python 3.10.19      # must be 3.10
 pip install spacy
 python -m spacy download de_core_news_sm
 ```
+
+[spacy]: https://spacy.io/
 
 ## Usage
 
@@ -41,4 +40,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/swiss_ner.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mmgreiner/swiss_ner.
